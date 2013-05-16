@@ -32,9 +32,12 @@
 	}
 	
 	function getIdByUrl($pageUrl) {
-		$pagePart = substr($pageUrl, strrpos($pageUrl, "/"));
-		
-		$url = "https://graph.facebook.com/$pagePart";
+		// Old!
+		//$pagePart = substr($pageUrl, strrpos($pageUrl, "/"));
+		//$pagePart = str_replace("/", "", $pagePart);
+	
+		$urlSelect = "select url, id, type from object_url where url = \"$pageUrl\"";
+		$url = "http://graph.facebook.com/fql?q=".urlencode($urlSelect);
 
 		$response = @file_get_contents($url);
 		if(!$response) {
@@ -43,7 +46,8 @@
 		}
 		$resp_obj = json_decode($response, true);
 	
-		return $resp_obj["id"];
+		
+		return $resp_obj["data"][0]["id"];
 	}
 	
 	/*
