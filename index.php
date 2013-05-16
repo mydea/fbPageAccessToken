@@ -26,7 +26,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Facebook Access Token Generator</title>
+    <title>Facebook Page Access Token Generator</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		
@@ -36,7 +36,7 @@
   <body>
 		<div id="main">
 			
-			<h1>Facebook Access Token Generator</h1>
+			<h1>Facebook Page Access Token Generator</h1>
 			<p>
 				This tool generates an Access Token for a Facebook Page, 
 				in order to be able to programatically use the Facebook API.
