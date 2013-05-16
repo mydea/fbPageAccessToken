@@ -39,7 +39,7 @@ v1.00: Initial version
 
 CREDITS
 ====================
-This test has been created by Francesco Novy. Included libraries are:
+This tool has been created by Francesco Novy. Included libraries are:
 - Facebook PHP SDK
 
 
