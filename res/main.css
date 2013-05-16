@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	min-height: 100%;
+	background: url(bg_pattern.png);
+	font-size: 110%;
+	line-height: 1.5em;
+	font-family: 'PT Sans', Arial;
+}
+
+h1 {
+	font-size: 2em;
+	margin-bottom: 0.7em;
+	line-height: 1.2em;
+}
+
+h2 {
+	font-size: 1.5em;
+	margin-bottom: 0.2em;
+	line-height: 1.2em;
+}
+
+ul, ol {
+	margin: 1em 0 1em 1.5em;
+}
+
+p {
+	margin-bottom: 1em;
+}
+
+#main {
+	width: 48em;
+	margin: 1em auto 1em auto;
+	padding: 1.5em;
+	background: #fff;
+}
+
+input {
+  width: 95%;
+  padding: 0.2em 0.4em;
+  font-size: 1em;
+  font-family: 'PT Sans', Arial;
+}
+
+input[readonly] {
+	background: rgb(245,245,245);
+}
+
+button, input[type=submit] {
+  padding: 0.2em 0.5em;
+  font-family: 'PT Sans', Arial;
+  font-size: 1em;
+	width: auto;
+	border: 1px solid #999;
+}
+
+.token {
+	word-wrap:break-word;
+	padding: 0.5em;
+	background: rgb(245,245,245);
+}
+
+form {
+  margin-bottom: 1em;
+}
+
+.center {
+	text-align: center;
+}
+
+.formList {
+	list-style: none;
+	margin: 1em 0;
+}
+
+ul.formList > li {
+	margin-bottom: 0.3em;
+}
+
+.errorBox {
+	padding: 0.5em;
+	border: 4px dotted #f00;
+}
+
+/* RESPONSIVE */
+@media all and (max-width: 60em) {
+	#main {
+		width: auto;
+		margin: 1em 1em;
+	}
+}
